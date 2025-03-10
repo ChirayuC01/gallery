@@ -149,12 +149,13 @@ export default function UploadPage() {
     <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center">
       <h1 className="text-3xl font-bold mb-6">Upload Media</h1>
 
-      <input
-        type="file"
-        accept="image/*,video/*"
-        onChange={handleFileChange}
-        className="mb-4"
-      />
+      // <input
+//   type="file"
+//   accept="image/*,video/*"
+//   onChange={handleFileChange}
+//   className="mb-4"
+// />
+
 
       <input
         type="file"

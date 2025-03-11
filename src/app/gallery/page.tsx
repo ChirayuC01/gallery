@@ -98,14 +98,14 @@ export default function GalleryPage() {
         className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70"
       >
         {selectedMedia && (
-          <div className="bg-white max-h-[90vh] p-4 rounded-lg shadow-lg max-w-3xl">
+          <div className="bg-white p-4 rounded-lg shadow-lg max-w-3xl">
             {selectedMedia.type === "image" ? (
               <Image
                 src={selectedMedia.url}
                 alt="Selected media"
                 width={800}
                 height={600}
-                className="rounded-lg"
+                className="max-h-[90vh] rounded-lg"
                 unoptimized
               />
             ) : (

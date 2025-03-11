@@ -95,10 +95,10 @@ export default function GalleryPage() {
       <Modal
         isOpen={isModalOpen}
         onRequestClose={closeModal}
-        className="fixed max-h-[90vh] inset-0 flex items-center justify-center bg-black bg-opacity-70"
+        className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70"
       >
         {selectedMedia && (
-          <div className="bg-white p-4 rounded-lg shadow-lg max-w-3xl">
+          <div className="bg-white max-h-[90vh] p-4 rounded-lg shadow-lg max-w-3xl">
             {selectedMedia.type === "image" ? (
               <Image
                 src={selectedMedia.url}
